@@ -16,12 +16,11 @@ def vinte(n):
     n  -= 1000
     imposto += 1500*(18/100)
     n -= 1500
-    imposto += n*(24520.008/100)
+    imposto += n*(28/100)
     
     print('R$ {:.2f}'.format(imposto))
 
 n = float(input())
-print(n)
 if n >= 0 and n <=2000:
     print('Isento')
 elif n>2000 and n <= 3000:
