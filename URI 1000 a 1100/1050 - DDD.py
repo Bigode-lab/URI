@@ -1,0 +1,20 @@
+#ler um ddd e dizer de ondem ele e
+ddd = int(input())
+#leitura do ddd
+if ddd == 61:
+    print('Brasilia')
+elif ddd == 71:
+    print('Salvador')
+elif ddd == 11:
+    print('Sao Paulo')
+elif ddd == 21:
+    print('Rio de Janeiro')
+elif ddd == 32:
+    print('Juiz de Fora')
+elif ddd == 19:
+    print('Campinas')
+elif ddd == 27:
+    print('Vitoria')
+elif ddd == 31:
+    print('Belo Horizonte')
+#julgamento dos casos e impresao da cidade respequitiva 
