@@ -1,5 +1,5 @@
+#obejetivo retornar a carta que ele tem o maior probabilidade de ganhar
 a, b = (int(x) for x in input().split())
-if a == b:
-    print(a)
-elif a != b:
-    print(max(a, b))
+#leitura de dois numeros inteiros 
+print(max(a, b))
+#se eles forem diferentes imprima o maximo 

@@ -1,3 +1,4 @@
+#nao esta rodando ainda
 estrelas = int(input())
 carneiros = [int(x) for x in input().split()]
 #roubados = 0

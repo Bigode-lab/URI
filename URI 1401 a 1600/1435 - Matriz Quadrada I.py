@@ -20,6 +20,7 @@ while (n != 0):
                     print(a, end='   ')
                 elif y == (n-1):
                     print(a, end='\n')
+                    print(end=' ')
                 l.append(a)
             c.append(l)
             l = []
