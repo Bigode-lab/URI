@@ -9,4 +9,4 @@ while i <= 9:
         print('I={} J={}'.format(i, j-x))
         #impressao dos respectivos i e j
     i += 2
-    #soma se +2 em i
+    #somamos +2 em i

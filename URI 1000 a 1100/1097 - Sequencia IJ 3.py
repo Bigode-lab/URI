@@ -10,4 +10,4 @@ while i <= 9:
         #impressao dos respectivos valores de i e j
     i += 2
     j += 2
-    #incrementacao de i e j
+    #incrementacao de i e j em +2
