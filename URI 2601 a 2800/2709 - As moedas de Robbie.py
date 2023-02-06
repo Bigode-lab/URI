@@ -1,0 +1,44 @@
+#erro de tempo
+primo = [2]
+cont = 2
+#iniciando uma lista que armazenaras os primos encontrados 
+def primos(cont, primo, verificador, n):
+    #funacao que encontrar os primos ate um numero n e retornara a lista
+    while cont <= n:
+        for x in primo:
+            if cont % x == 0:
+                verificador = False
+                break
+        if  verificador:
+            primo.append(cont)
+            True
+        if n == cont:
+            r = verificador
+        cont +=1
+        verificador = True
+    return primo, cont-1, r
+while True:
+    try:
+        soma = 0
+        moedas = []
+        quantidade = int(input())
+        #leitura da quantidade de moedas
+        for x in range(quantidade):
+            moeda = int(input())
+            moedas.append(moeda)
+            #leitura de cada uma das moedas e armzenando as em uma lista
+        pulo = int(input())
+        for x in range(0,quantidade, pulo):
+            soma += moedas[x]
+        if cont > soma:
+            sentinela = soma in primos
+        else:
+            primos, cont, sentinela = (primos(cont, primo, True, soma))            
+        if sentinela:
+            print('You’re a coastal aircraft, Robbie, a large silver aircraft.')
+            print(primo)
+        else:
+            print('Bad boy! I’ll hit you.')
+            print(primo)
+    except EOFError():
+        break
