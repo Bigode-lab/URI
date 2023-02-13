@@ -18,6 +18,7 @@ def primos(cont, primo, verificador, n):
         verificador = True
     return primo, cont-1, r
 while True:
+    primo = (primos(cont, primo, True, 10000))            
     try:
         soma = 0
         moedas = []
@@ -29,16 +30,10 @@ while True:
             #leitura de cada uma das moedas e armzenando as em uma lista
         pulo = int(input())
         for x in range(0,quantidade, pulo):
-            soma += moedas[x]
-        if cont > soma:
-            sentinela = soma in primos
-        else:
-            primos, cont, sentinela = (primos(cont, primo, True, soma))            
-        if sentinela:
+            soma += moedas[x]    
+        if soma in primo:
             print('You’re a coastal aircraft, Robbie, a large silver aircraft.')
-            print(primo)
         else:
             print('Bad boy! I’ll hit you.')
-            print(primo)
     except EOFError():
         break
