@@ -1,0 +1,70 @@
+
+'''
+while True:
+    try:
+        def primos(numero):
+            for count in range(2,numero):
+                if (n % count == 0):
+                    break
+            if(mult==0):
+                primos.append(numero)
+                return True
+            else:
+                return False
+
+        moeda = int(input())
+        moedas = []
+        soma = 0
+        for x in range(moeda):
+            m = int(input())
+            moedas.append(m)
+        pulo = int(input())
+        for y in range(0, moeda, pulo):
+            soma += moedas[y]
+        sentinela = primos(soma)
+        if sentinela:
+            print('Bad boy! I’ll hit you.')
+        else:
+            print('You’re a coastal aircraft, Robbie, a large silver aircraft.')
+    except EOFError():
+        break
+'''
+def primos(cont, base, primo, verificador, n):
+    while cont <= n:
+        for x in range(base, cont):
+            if cont % 2 == 0:
+                verificador = True
+                break
+        if not verificador:
+            primo.append(cont)
+        cont +=1
+        verificador = False
+    return primo, cont
+
+
+m = int(input())
+soma = 0
+moedas = []
+primo = []
+cont = 2
+for x in range(m):
+    moeda = int(input())
+    moedas.append(moeda)
+pulo =  int(input())
+for x in range(0, m, pulo):
+    soma += moedas[x]
+if soma <= cont:
+    print(primo)
+    print(soma)
+    if soma in primo:
+        print('You’re a coastal aircraft, Robbie, a large silver aircraft.')
+    else:
+        print('Bad boy! I’ll hit you.')
+else:
+    primo, cont = primos(cont, cont, primo, False, soma)
+    print(primo)
+    print(soma)
+    if soma in primo:
+        print('You’re a coastal aircraft, Robbie, a large silver aircraft.')
+    else:
+        print('Bad boy! I’ll hit you.')

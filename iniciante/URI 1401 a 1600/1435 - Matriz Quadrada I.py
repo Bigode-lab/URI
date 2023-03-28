@@ -16,11 +16,13 @@ while (n != 0):
                 dcn = abs(n-y)
                 dc0 = abs(y+1)
                 a = min(min(dln, dl0), min(dc0, dcn))
-                if y < (n-1):
-                    print(a, end='   ')
+                if y == 0:
+                    print('%3d' % a, end='')
+                elif y < (n-1):
+                    print(' %3d' % a, end='')
                 elif y == (n-1):
-                    print(a, end='\n')
-                    print(end=' ')
+                    print(' %3d' % a, end='\n')
+                    #print(end=' ')
                 l.append(a)
             c.append(l)
             l = []

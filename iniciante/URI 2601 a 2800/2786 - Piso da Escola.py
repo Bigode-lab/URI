@@ -1,0 +1,6 @@
+largura = int(input())
+comprimento = int(input())
+tipo_1 = (comprimento*largura) + ((comprimento-1)*(largura-1))
+tipo_2 = (2*(comprimento-1))+(2*(largura-1))
+print(tipo_1)
+print(tipo_2)

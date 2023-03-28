@@ -1,0 +1,6 @@
+a, b,c = (str(x) for x in input().split('.'))
+print(a)
+print(b)
+d, f = c.split('-')
+print(d)
+print(f)
